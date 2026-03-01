@@ -1,0 +1,43 @@
+### Testando o HEAD
+HEAD http://localhost:8000/livros/
+Content-Type: application/json
+### Testando o GET 
+GET http://localhost:8000/livros/
+Content-Type: application/json
+### Testando o GET autores
+GET http://localhost:8000/autores/
+Content-Type: application/json
+### Testando o POST
+POST http://localhost:8000/autores/
+Content-Type: application/json
+Authorization: Basic admin biblioteca.
+
+{
+    "nome": "Clarice Lispector"
+}
+
+### Testando o PATCH
+PATCH http://localhost:8000/autores/1/
+Content-Type: application/json
+
+{
+    "data_nascimento": "9999-01-01"
+}
+### Testando API OpenWather
+@owkey = 000
+GET http://api.openweathermap.org/data/2.5/weather?q=Salvador,br&appid={{owkey}}
+
+### Token JWT
+POST http://localhost:8000/api/token/
+Content-Type: application/json
+
+{
+    "username":"usuario",
+    "password":"senha"
+}
+
+### Testando Token
+
+GET http://localhost:8000/livros/
+Content-Type: application/json
+Authorization: Bearer Token

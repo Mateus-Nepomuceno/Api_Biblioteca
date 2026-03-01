@@ -1,0 +1,23 @@
+# Python: Arquivos compilados e cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Django: Banco de dados local (SQLite)
+db.sqlite3
+
+# Django: Pasta de arquivos de mídia (uploads de usuários)
+media/
+
+# Ambientes Virtuais
+.venv/
+
+# Configurações de IDE
+.vscode/
+
+# Arquivo de variáveis de ambiente (segredos)
+.env
+
+# Outros arquivos
+clientes_app_testes/
